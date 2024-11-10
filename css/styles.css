@@ -115,6 +115,8 @@ img {
     color: #404bbf;
 }
 
+
+
 .title {
     width: 1440px;
     height: 600px;
@@ -168,6 +170,10 @@ img {
     background: #404bbf;
 }
 
+.content {
+    visibility: hidden;
+}
+
 .section-content {
     display: flex;
     gap: 24px;
@@ -178,7 +184,6 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 8px;
     width: calc((100% - 72px) / 4);
     height: 104px;
 }
@@ -189,6 +194,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .content-text {
@@ -252,6 +258,7 @@ background: #f4f4fd;
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
+    margin-bottom: 8px;
 }
 .team-vacancy {
     font-weight: 400;
@@ -276,7 +283,8 @@ background: #f4f4fd;
 .portfolio-card {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-box {
@@ -309,12 +317,17 @@ background: #f4f4fd;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 32px 0;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
 }
 
 .page-footer {
     background-color: #2e2f42;
     padding: 100px 0;
+}
+.logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text {
@@ -324,6 +337,4 @@ background: #f4f4fd;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
-    padding-top: 16px;
-    
 }
