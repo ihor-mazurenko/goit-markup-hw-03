@@ -170,8 +170,21 @@ img {
     background: #404bbf;
 }
 
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .content {
-    visibility: hidden;
+    padding: 120px 0;
 }
 
 .section-content {
@@ -291,6 +304,7 @@ background: #f4f4fd;
     border: 1px solid #e7e9fc;
     width: 360px;
     height: 420px;
+    border-top: none;
 }
 
 .portfolio-list {
